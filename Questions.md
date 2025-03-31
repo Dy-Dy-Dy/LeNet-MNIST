@@ -68,9 +68,7 @@
 
 4. **学习率调整**：  
    - **大 `batch_size` 需要更大的学习率**（因为梯度更稳定），可参考 **线性缩放规则（Linear Scaling Rule）**：  
-     \[
-     \text{New LR} = \text{Base LR} \times \frac{\text{New Batch Size}}{\text{Base Batch Size}}
-     \]
+     $\text{New LR} = \text{Base LR} \times \frac{\text{New Batch Size}}{\text{Base Batch Size}}$
    - 例如，如果 `batch_size=256` 时 `lr=0.1`，那么 `batch_size=512` 时可尝试 `lr=0.2`。
 
 ---
